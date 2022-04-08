@@ -67,6 +67,9 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         factoextra \
         cluster \
         ottr \
+        rpart.plot \
+        rattle \
+        RColorBrewer \
     && rm -rf /tmp/downloaded_packages
 
 # Install summarytools and load some R package off the bat
