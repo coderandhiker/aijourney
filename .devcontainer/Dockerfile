@@ -95,6 +95,9 @@ RUN R -e "install.packages(\"summarytools\")"
 RUN R -e "library(ottr)"
 RUN R -e "library(here)"
 RUN R -e "library(languageserver)"
+RUN R -e "install.packages(\"bitops\")"
+RUN R -e "install.packages(\"XML\")"
+RUN R -e "install.packages(\"rattle\", repos=\"https://rattle.togaware.com\", type=\"source\")"
 
 # VSCode R Debugger dependency. Install the latest release version from GitHub without using GitHub API.
 # See https://github.com/microsoft/vscode-dev-containers/issues/1032
